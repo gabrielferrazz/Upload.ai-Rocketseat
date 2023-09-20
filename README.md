@@ -2,6 +2,8 @@
 
 1 - instale o Node.
 
-2- Rode o comando npm install -g pnpm
+2- npm install -g pnpm
 
-3- 
+3- pnpm i lucide-react
+
+4- pnpm dlx shadcn-ui@latest add separator
