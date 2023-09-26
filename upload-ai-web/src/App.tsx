@@ -1,6 +1,7 @@
 import { Github } from "lucide-react"
 import { Button } from "./components/ui/button"
 import { Separator } from "./components/ui/separator"
+import { Textarea } from "./components/ui/textarea"
 
 export function App() {
   return (    
@@ -21,9 +22,20 @@ export function App() {
           </Button>
         </div>
       </div>
-      <div className="bg-red-500">
-        oi
-      </div>
+      <main className="flex-1 p-6 flex gap-6">
+        <div className="flex flex-col flex-1 gap-4">
+          <div className="grid grid-rows-2 gap-4 flex-1">
+            <Textarea></Textarea>
+            <Textarea></Textarea>
+
+          </div>
+
+          <p className="text-sm text-muted-foreground">
+            lembre-se: voce pode utilizar a variavel <code className="text-violet-400">{"{transciption}"}</code> no seu prompt para adicionar o seu conteudo da transcricao do video selcionado.
+          </p>
+        </div>
+        <aside className="w-88"></aside>
+      </main>
     </div>
   )
 }
